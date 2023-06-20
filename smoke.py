@@ -3,7 +3,7 @@ import tensorflow as tf
 from PIL import Image
 
 # 导入模型，注意修改模型的路径
-model = tf.keras.models.load_model('桌面/oooo/0010.h5')
+model = tf.keras.models.load_model('0010.h5')
 
 labels = ['no smoking', 'smoking']
 
@@ -40,5 +40,4 @@ if uploaded_file is not None:
     result, confidence = predict(image)
     st.write('预测结果：', result)
     st.write('准确率：', confidence)
-    
     
